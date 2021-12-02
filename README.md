@@ -9,9 +9,12 @@
 >we construct a Chemical Element Knowledge Graph (KG) to summarize microscopic associations between elements and propose a novel **K**nowledge-enhanced **C**ontrastive **L**earning (**KCL**) framework for molecular representation learning. 
 
 ## Model Architecture
-![Model_architecture](https://github.com/China-UK-ZSL/ZS-F-VQA/blob/main/figures/Model_architecture.png)
+![Model_architecture](https://github.com/Fangyin1994/KCL/blob/main/fig/overview.png)
 
 <br />
+
+## Result
+![Main Result](https://github.com/Fangyin1994/KCL/blob/main/fig/result.png)
 
 ### To-do List
 - [ ] Usage
@@ -20,6 +23,5 @@
 - [ ] Pretrained Model
 - [ ] Parameter
 - [ ] Running
-- [ ] Result
 - [ ] Acknowledgements
 - [ ] Cite
