@@ -1,2 +1,25 @@
 # KCL
-Code and Data for the paper: Molecular Contrastive Learning with Chemical Element Knowledge Graph [AAAI 2022]
+
+![](https://img.shields.io/badge/version-1.0.0-blue)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/Fangyin1994/KCL/blob/main/LICENSE)
+<!-- [![arxiv badge](https://img.shields.io/badge/arXiv-2107.05348-red)](http://arxiv.org/abs/2107.05348) -->
+
+[*Molecular Contrastive Learning with Chemical Element Knowledge Graph*]() [ AAAI 2022 ]. 
+
+>In this work,  we propose a Zero-shot VQA algorithm using knowledge graphs and a mask-based learning mechanism for better incorporating external knowledge, and present new answer-based Zero-shot VQA splits for the F-VQA dataset. 
+
+## Model Architecture
+![Model_architecture](https://github.com/China-UK-ZSL/ZS-F-VQA/blob/main/figures/Model_architecture.png)
+
+<br />
+
+### To-do List
+- [ ] Usage
+- [ ] Requirements
+- [ ] Data
+- [ ] Pretrained Model
+- [ ] Parameter
+- [ ] Running
+- [ ] Result
+- [ ] Acknowledgements
+- [ ] Cite
