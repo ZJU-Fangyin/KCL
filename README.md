@@ -6,7 +6,7 @@
 
 [*Molecular Contrastive Learning with Chemical Element Knowledge Graph*]() [ AAAI 2022 ]. 
 
->we construct a Chemical Element Knowledge Graph (KG) to summarize microscopic associations between elements and propose a novel **K**nowledge-enhanced **C**ontrastive **L**earning (**KCL**) framework for molecular representation learning. 
+>We construct a Chemical Element Knowledge Graph (KG) to summarize microscopic associations between elements and propose a novel **K**nowledge-enhanced **C**ontrastive **L**earning (**KCL**) framework for molecular representation learning. 
 
 ## Model Architecture
 ![Model_architecture](https://github.com/Fangyin1994/KCL/blob/main/fig/overview.png)
