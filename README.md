@@ -1,4 +1,4 @@
-# KCL
+# **K**nowledge-enhanced **C**ontrastive **L**earning (**KCL**)
 
 ![](https://img.shields.io/badge/version-1.0.0-blue)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/Fangyin1994/KCL/blob/main/LICENSE)
