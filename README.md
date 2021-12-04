@@ -14,7 +14,8 @@
 <br />
 
 ## Result
-![Main Result](https://github.com/Fangyin1994/KCL/blob/main/fig/result.png)
+![Fine-tune Protocol](https://github.com/ZJU-Fangyin/KCL/blob/main/fig/fine-tune_protocol.png)
+![Linear Protocol](https://github.com/ZJU-Fangyin/KCL/blob/main/fig/linear_protocol.png)
 
 ### To-do List
 - [ ] Usage
