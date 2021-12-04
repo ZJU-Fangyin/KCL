@@ -4,7 +4,7 @@
   	<font size=6><strong>化学元素知识图谱指导下的分子图对比学习</strong></font>
 </p>
 
-这是针对我们论文 **[Molecular Contrastive Learning with Chemical Element Knowledge Graph](https://arxiv.org/abs/2112.00544)**的官方简介，目前论文已被 **AAAI 2022** 主会录用。
+这是针对我们论文 [**Molecular Contrastive Learning with Chemical Element Knowledge Graph**](https://arxiv.org/abs/2112.00544)的官方简介，目前论文已被 **AAAI 2022** 主会录用。
 ```
 Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming Qin, Zhuo Chen, Xiaohui Fan and Huajun Chen. Molecular Contrastive Learning with Chemical Element Knowledge Graph. AAAI2022 main track. (CCF A). 
 ```
@@ -16,7 +16,7 @@ Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming 
 
 # 论文介绍
 一种知识增强的分子图对比学习框架Knowledge-enhanced Contrastive Learning (KCL)。利用化学元素知识图谱指导原始分子图的增强过程，并针对分子增强图设计了知识感知的消息传递网络KMPNN，通过最大化正样本对之间的一致性和硬负样本对之间的差异性构建对比损失以优化模型。
-<div align=center><img src="./fig/intro.png" style="zoom:80%;" />
+<div align=center><img src="./fig/intro.png" style="zoom:100%;" />
 </div>
 
 ## 摘要
@@ -40,7 +40,7 @@ Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming 
 ## 实验
 ### (1) 数据集
 为了验证KCL的效果，我们在MoleculeNet的8个基准数据集上进行评测，数据集具体信息如下所示：
-<div align=center><img src="./fig/datainfo.png" style="zoom:60%;" />
+<div align=center><img src="./fig/datainfo.png" style="zoom:100%;" />
 </div>
 
 ### (2) 实验结果
@@ -51,7 +51,7 @@ Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming 
 </div>
 
 * linear protocol效果
-<div align=center><img src="./fig/linear_protocol.png" style="zoom:30%;" />
+<div align=center><img src="./fig/linear_protocol.png" style="zoom:100%;" />
 </div>
 
 # 如何引用
