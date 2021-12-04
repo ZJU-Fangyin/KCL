@@ -32,7 +32,7 @@ Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming 
 
 * Chemical Element KG Construction：我们从化学元素周期表中获取所有化学元素及其基本化学性质。每个元素具有15个以上的性质，包括金属性、周期性、状态、重量、电负性、电子亲和力、熔点、沸点、电离、半径、硬度、模量、密度、导电、热量和丰度。提取出的三元组以 (Gas, isStateOf, Cl)的形式存在于KG中，代表元素和性质之间存在指定的关系。
 
-<div align=center><img src="./fig/KGstat.png" style="zoom:100%;" />
+<div align=center><img src="./fig/KGstat.png" style="zoom:30%;" />
 </div>
 
 
@@ -51,7 +51,7 @@ Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming 
 </div>
 
 * linear protocol效果
-<div align=center><img src="./fig/linear_protocol.png" style="zoom:100%;" />
+<div align=center><img src="./fig/linear_protocol.png" style="zoom:50%;" />
 </div>
 
 # 如何引用
