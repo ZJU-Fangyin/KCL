@@ -57,7 +57,7 @@ lmdb           1.2.1
 # 结果
 为了验证KCL的效果，我们在MoleculeNet的8个基准数据集上进行评测。我们分别在fine-tune protocol和linear protocol两种设定下进行了实验。实验表明，KCL在两种设定下均比以往分子图表示学习方法效果更佳。
 * fine-tune protocol效果
-<div align=center><img src="./fig/fine-tune_protocol.png" style="zoom:100%;" />
+<div align=center><img src="./fig/fine-tune_protocol.png" height = "300" />
 </div>
 
 * linear protocol效果
