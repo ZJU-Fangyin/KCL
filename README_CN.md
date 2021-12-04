@@ -8,6 +8,9 @@
   	<font size='20'>化学元素知识图谱指导下的分子图对比学习</font>
 </p>
 
+<div align='center' ><font size='70'>化学元素知识图谱指导下的分子图对比学习</font></div>
+
+
 # 化学元素知识图谱指导下的分子图对比学习
 
 这是针对我们论文 [**Molecular Contrastive Learning with Chemical Element Knowledge Graph**](https://arxiv.org/abs/2112.00544)的官方简介，目前论文已被 **AAAI 2022** 主会录用。
