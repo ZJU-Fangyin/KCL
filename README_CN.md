@@ -60,12 +60,13 @@ lmdb           1.2.1
 <div align=center><img src="./fig/fine-tune_protocol.png" height = "300" />
 </div>
 
+
 * linear protocol效果
 <div align=center><img src="./fig/linear_protocol.png" height = "250" />
 </div>
 
 # 如何引用
-如果您使用或拓展我们的工作，请引用以下文章：
+如果您使用或拓展我们的工作，请引用以下论文：
 
 ```
 
