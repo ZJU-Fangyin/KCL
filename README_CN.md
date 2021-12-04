@@ -8,7 +8,7 @@
   	<font size='20'>化学元素知识图谱指导下的分子图对比学习</font>
 </p>
 
-<div align='center' ><font size='70'>化学元素知识图谱指导下的分子图对比学习</font></div>
+<div align='center' ># 化学元素知识图谱指导下的分子图对比学习</font></div>
 
 
 # 化学元素知识图谱指导下的分子图对比学习
