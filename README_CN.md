@@ -10,52 +10,62 @@ Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming 
 ```
 
 
-# 作者
+# 项目成员
 方尹、张强、杨海宏、庄祥、邓淑敏、张文、秦铭、陈卓、范骁辉、陈华钧。
 
 
-# 论文介绍
+# 项目简介
 一种知识增强的分子图对比学习框架Knowledge-enhanced Contrastive Learning (KCL)。利用化学元素知识图谱指导原始分子图的增强过程，并针对分子增强图设计了知识感知的消息传递网络KMPNN，通过最大化正样本对之间的一致性和硬负样本对之间的差异性构建对比损失以优化模型。
-<div align=center><img src="./fig/intro.png" style="zoom:20%;" />
-</div>
-
-## 摘要
-
-## 模型
-具体来说，KCL框架分为三个模块，如下图所示：
 <div align=center><img src="./fig/overview.png" style="zoom:100%;" />
 </div>
 
-### (1) Knowledge-guided Graph Augmentation
+# 环境要求
+您需要按以下要求配置项目运行环境：
+```
+python         3.7
+torch          1.7.1
+dgl            0.6.1
+rdkit          2018.09.3
+dgllife        0.2.8
+pandarallel    1.5.2
+numpy          1.20.3
+pandas         1.3.1
+lmdb           1.2.1
+```
 
-知识指导的图增强模块利用化学元素知识图谱指导原始分子图的增强过程，使分子增强图不仅包含拓扑结构知识，还包含元素的基本领域知识。
+# 数据准备
+请`cd data`并运行以下命令来进行数据准备：
+- `python graph_utils.py`
+若您需要使用硬负样本挖掘，请`cd data`并运行以下命令：
+- `bash dist.sh`
+- `bash cluster.sh`
+- `python uni_cluster.py`
 
-* Chemical Element KG Construction：我们从化学元素周期表中获取所有化学元素及其基本化学性质。每个元素具有15个以上的性质，包括金属性、周期性、状态、重量、电负性、电子亲和力、熔点、沸点、电离、半径、硬度、模量、密度、导电、热量和丰度。提取出的三元组以 (Gas, isStateOf, Cl)的形式存在于KG中，代表元素和性质之间存在指定的关系。
+# 运行代码
+请`cd kcl`运行以下命令来预训练项目模型：
+- `bash script/pretrain.sh`
 
-<div align=center><img src="./fig/KGstat.png" style="zoom:30%;" />
-</div>
+# 评估效果
+请运行以下命令来评估项目模型的效果：
+- `bash script/finetune.sh`
+您可以通过替换`data_name`参数以更换不同的数据集。
 
+# 预训练项目模型
+您也可以根据以下路径下载预训练好的项目模型：
+`/dump/Pretrain/gnn-kmpnn-model`
 
-
-## 实验
-### (1) 数据集
-为了验证KCL的效果，我们在MoleculeNet的8个基准数据集上进行评测，数据集具体信息如下所示：
-<div align=center><img src="./fig/datainfo.png" style="zoom:100%;" />
-</div>
-
-### (2) 实验结果
-我们分别在fine-tune protocol和linear protocol两种设定下进行了实验。实验表明，KCL在两种设定下均比以往分子图表示学习方法效果更佳。
-
+# 结果
+为了验证KCL的效果，我们在MoleculeNet的8个基准数据集上进行评测。我们分别在fine-tune protocol和linear protocol两种设定下进行了实验。实验表明，KCL在两种设定下均比以往分子图表示学习方法效果更佳。
 * fine-tune protocol效果
 <div align=center><img src="./fig/fine-tune_protocol.png" style="zoom:100%;" />
 </div>
 
 * linear protocol效果
-<div align=center><img src="./fig/linear_protocol.png" style="zoom:50%;" />
+<div align=center><img src="./fig/linear_protocol.png" style="zoom:20%;" />
 </div>
 
 # 如何引用
-如果您使用或扩展我们的工作，请引用以下文章：
+如果您使用或拓展我们的工作，请引用以下文章：
 
 ```
 
