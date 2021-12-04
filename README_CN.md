@@ -4,9 +4,11 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/Fangyin1994/KCL/blob/main/LICENSE)
 [![arxiv badge](https://img.shields.io/badge/arxiv-2112.00544-orange)](https://arxiv.org/abs/2112.00544)
 
-<p align="center">
+<!-- <p align="center">
   	<font size=12><strong>化学元素知识图谱指导下的分子图对比学习</strong></font>
-</p>
+</p> -->
+
+# 化学元素知识图谱指导下的分子图对比学习
 
 这是针对我们论文 [**Molecular Contrastive Learning with Chemical Element Knowledge Graph**](https://arxiv.org/abs/2112.00544)的官方简介，目前论文已被 **AAAI 2022** 主会录用。
 ```
