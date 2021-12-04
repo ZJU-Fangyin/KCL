@@ -4,12 +4,6 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/Fangyin1994/KCL/blob/main/LICENSE)
 [![arxiv badge](https://img.shields.io/badge/arxiv-2112.00544-orange)](https://arxiv.org/abs/2112.00544)
 
-<p align="center">
-  	<font size='20'>化学元素知识图谱指导下的分子图对比学习</font>
-</p>
-
-<div align='center' ># 化学元素知识图谱指导下的分子图对比学习</font></div>
-
 
 # 化学元素知识图谱指导下的分子图对比学习
 
