@@ -61,7 +61,7 @@ lmdb           1.2.1
 </div>
 
 * linear protocol效果
-<div align=center><img src="./fig/linear_protocol.png" height = "200" />
+<div align=center><img src="./fig/linear_protocol.png" height = "400" />
 </div>
 
 # 如何引用
