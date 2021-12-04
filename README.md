@@ -20,7 +20,6 @@ We construct a Chemical Element Knowledge Graph (KG) to summarize microscopic as
 </div>
 
 # Requirements
-To install requirements:
 ```
 python         3.7
 torch          1.7.1
