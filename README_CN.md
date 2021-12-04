@@ -5,7 +5,7 @@
 [![arxiv badge](https://img.shields.io/badge/arxiv-2112.00544-orange)](https://arxiv.org/abs/2112.00544)
 
 <p align="center">
-  	<font size=12>化学元素知识图谱指导下的分子图对比学习</font>
+  	<font size=50>化学元素知识图谱指导下的分子图对比学习</font>
 </p>
 
 # 化学元素知识图谱指导下的分子图对比学习
