@@ -16,7 +16,7 @@ Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming 
 
 # 论文介绍
 一种知识增强的分子图对比学习框架Knowledge-enhanced Contrastive Learning (KCL)。利用化学元素知识图谱指导原始分子图的增强过程，并针对分子增强图设计了知识感知的消息传递网络KMPNN，通过最大化正样本对之间的一致性和硬负样本对之间的差异性构建对比损失以优化模型。
-<div align=center><img src="./fig/intro.png" style="zoom:100%;" />
+<div align=center><img src="./fig/intro.png" style="zoom:20%;" />
 </div>
 
 ## 摘要
