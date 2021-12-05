@@ -72,7 +72,7 @@ We verify the effectiveness of KCL under two settings on 8 benchmark datasets fr
 <div align=center><img src="./fig/fine-tune_protocol.png" width = "800" />
 </div>
 
-
+<br/>
 * performance under linear protocol
 <div align=center><img src="./fig/linear_protocol.png" height = "250" />
 </div>
