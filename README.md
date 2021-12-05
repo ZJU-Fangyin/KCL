@@ -69,7 +69,7 @@ You can download pretrained models here: `/dump/Pretrain/gnn-kmpnn-model`
 We verify the effectiveness of KCL under two settings on 8 benchmark datasets from the MoleculeNet: (1) fine-tune protocol (2) linear protocol.
 
 * performance under fine-tune protocol
-<div align=center><img src="./fig/fine-tune_protocol.png" width = "700" />
+<div align=center><img src="./fig/fine-tune_protocol.png" width = "800" />
 </div>
 
 
