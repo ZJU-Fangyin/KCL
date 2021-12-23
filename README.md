@@ -84,7 +84,7 @@ If you use or extend our work, please cite the following paper:
 
 ```
 
-### To-do List
+### Coming soon
 - [ ] Data
 - [ ] Code
 - [ ] Acknowledgements
