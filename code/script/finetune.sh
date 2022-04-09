@@ -3,7 +3,7 @@ CUDA_VISIBLE_DEVICES=1 python finetune.py \
     --encoder_name KMPNN \
     --batch_size 64 \
     --predictor_hidden_feats 32 \
-    --patience 100 \
+    --patience 50 \
     --encoder_path ./dump/Pretrain/gnn-kmpnn-model/KMPNNGNN_0910_0900_2000th_epoch.pkl \
     --readout_path ./dump/Pretrain/gnn-kmpnn-model/Set2Set_0910_0900_2000th_epoch.pkl \
     --lr 0.01 \
