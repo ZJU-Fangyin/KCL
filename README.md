@@ -32,7 +32,7 @@ pandas         1.3.1
 lmdb           1.2.1
 ```
 
-# Dataset Preparation
+# Running
 We saved pre-train dataset in LMDB, please execute `cd data` and run:
 
 - `python graph_utils.py`
@@ -43,16 +43,16 @@ To apply hard negative strategy, please execute `cd data` and run:
 - `bash cluster.sh`
 - `python uni_cluster.py`
 
-
+<!-- 
 # Training
 To pre-train KCL, please execute `cd code` and run:
 
-- `bash script/pretrain.sh`
+- `bash script/pretrain.sh` -->
 
 
 # Evaluation
 
-To test on downstream tasks, please run:
+To test on downstream tasks, please execute `cd code` and run:
 
 - `bash script/finetune.sh`
 
@@ -85,5 +85,5 @@ If you use or extend our work, please cite the following paper:
 
 ```
 
-### Coming soon
-- [ ] Cite
+# Other Matters
+As we plan to expand the paper to a journal, we will publish the training code together with the follow-up work in June to protect our work. Thanks for your understanding!
