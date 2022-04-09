@@ -50,7 +50,7 @@ To pre-train KCL, please execute `cd code` and run:
 - `bash script/pretrain.sh` -->
 
 
-# Runing
+# Running
 
 To test on downstream tasks, please execute `cd code` and run:
 
