@@ -32,7 +32,7 @@ pandas         1.3.1
 lmdb           1.2.1
 ```
 
-# Running
+# Preparing
 We saved pre-train dataset in LMDB, please execute `cd data` and run:
 
 - `python graph_utils.py`
@@ -50,7 +50,7 @@ To pre-train KCL, please execute `cd code` and run:
 - `bash script/pretrain.sh` -->
 
 
-# Evaluation
+# Runing
 
 To test on downstream tasks, please execute `cd code` and run:
 
