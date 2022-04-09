@@ -13,4 +13,4 @@ CUDA_VISIBLE_DEVICES=1 python finetune.py \
     --split_type random \
     --dump_path ./dump \
     --exp_name KG-finetune-kmpnn \
-    --exp_id bace-linear
+    --exp_id bace
