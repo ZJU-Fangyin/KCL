@@ -45,7 +45,7 @@ To apply hard negative strategy, please execute `cd data` and run:
 
 
 # Training
-To pre-train KCL, please execute `cd kcl` and run:
+To pre-train KCL, please execute `cd code` and run:
 
 - `bash script/pretrain.sh`
 
@@ -73,6 +73,7 @@ We verify the effectiveness of KCL under two settings on 8 benchmark datasets fr
 </div>
 
 <br/>
+
 * performance under linear protocol
 <div align=center><img src="./fig/linear_protocol.png" height = "250" />
 </div>
