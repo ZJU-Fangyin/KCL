@@ -58,7 +58,7 @@ To test on downstream tasks, please execute `cd code` and run:
 
 Change the `data_name` command in the bash file to replace different datasets.
 
-You can also specify the `encoder`, `training rate`, etc. in this bash file.
+You can also specify the `encoder_name`, `training rate`, etc. in this bash file. Don't forget change the `encoder_path` and `readout_path` if you change your `encoder_name`!
 
 
 # Pre-trained Models
