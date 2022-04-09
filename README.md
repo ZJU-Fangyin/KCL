@@ -58,7 +58,27 @@ To test on downstream tasks, please execute `cd code` and run:
 
 Change the `data_name` command in the bash file to replace different datasets.
 
-You can also specify the `encoder_name`, `training rate`, etc. in this bash file. Don't forget change the `encoder_path` and `readout_path` if you change your `encoder_name`!
+You can also specify the `encoder_name`, `training rate`, etc. in this bash file. 
+
+Don't forget change the `encoder_path` and `readout_path` if you change your `encoder_name`! For example:
+```
+CUDA_VISIBLE_DEVICES=0 python finetune.py \
+    --seed 12 \
+    --encoder_name GNN \
+    --batch_size 64 \
+    --predictor_hidden_feats 32 \
+    --patience 100 \
+    --encoder_path ./dump/Pretrain/gnn-kmpnn-model/GCNNodeEncoder_0910_0900_2000th_epoch.pkl \
+    --readout_path ./dump/Pretrain/gnn-kmpnn-model/WeightedSumAndMax_0910_0900_2000th_epoch.pkl \
+    --lr 0.001 \
+    --predictor nonlinear \
+    --eval nonfreeze \
+    --data_name Tox21 \
+    --split_type random \
+    --dump_path ./dump \
+    --exp_name KG-finetune-gnn \
+    --exp_id tox21
+```
 
 
 # Pre-trained Models
