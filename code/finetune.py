@@ -15,7 +15,7 @@ from model import GCNNodeEncoder, WeightedSumAndMax, MPNNGNN, Set2Set, KMPNNGNN
 from torch.optim import Adam
 # from analyse import pca_2d, tsne_2d, pattern_tsne_2d
 import logging
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import pdb
 import pickle
 logger = logging.getLogger()
