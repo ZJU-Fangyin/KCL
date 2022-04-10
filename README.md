@@ -62,17 +62,22 @@ To pre-train KCL, please execute `cd code` and run:
 - `bash script/pretrain.sh` -->
 
 
+# Pre-trained Models
+
+We provided pretrained models, which you can download from `code/dump/Pretrain/gnn-kmpnn-model`.
+
 # Running
 
-To test on downstream tasks, please execute `cd code` and run:
+Then you can test on downstream tasks, please execute `cd code` and run:
 
 - `bash script/finetune.sh`
 
-Change the `data_name` command in the bash file to replace different datasets.
+Change the `data_name` command in the bash file to replace different datasets. The optional datasets are BBBP, Tox21, ToxCast, SIDER, ClinTox, BACE, ESOL, FreeSolv.
 
 You can also specify the `encoder_name`, `training rate`, etc. in this bash file. 
 
-Don't forget change the `encoder_path` and `readout_path` if you change your `encoder_name`! For example:
+Note that if you change the `encoder_name`, don't forget to change the `encoder_path` and `readout_path`! 
+E.g:
 ```
 CUDA_VISIBLE_DEVICES=0 python finetune.py \
     --seed 12 \
@@ -91,13 +96,6 @@ CUDA_VISIBLE_DEVICES=0 python finetune.py \
     --exp_name KG-finetune-gnn \
     --exp_id tox21
 ```
-
-
-# Pre-trained Models
-
-You can download pretrained models here: `/dump/Pretrain/gnn-kmpnn-model`
-
-
 
 <!-- ## Results
 We verify the effectiveness of KCL under two settings on 8 benchmark datasets from the MoleculeNet: (1) fine-tune protocol (2) linear protocol.
