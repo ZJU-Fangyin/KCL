@@ -10,7 +10,7 @@
 
 # Molecular Contrastive Learning with Chemical Element Knowledge Graph
 
-This repository is the official introduction of [**KCL**](https://github.com/ZJU-Fangyin/KCL), which is model proposed in a paper: **[Molecular Contrastive Learning with Chemical Element Knowledge Graph](https://arxiv.org/abs/2112.00544)**, accepted by **AAAI 2022** main conference. 
+This repository is the official implementation of [**KCL**](https://github.com/ZJU-Fangyin/KCL), which is model proposed in a paper: **[Molecular Contrastive Learning with Chemical Element Knowledge Graph](https://arxiv.org/abs/2112.00544)**, accepted by **AAAI 2022** main conference. 
 
 
 # Contributor
@@ -21,16 +21,15 @@ Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming 
 We construct a Chemical Element Knowledge Graph (KG) to summarize microscopic associations between elements and propose a novel **K**nowledge-enhanced **C**ontrastive **L**earning (**KCL**) framework for molecular representation learning. 
 
 
-# Abstract
-Molecular representation learning contributes to multiple downstream tasks such as molecular property prediction and drug design. To properly represent molecules, graph contrastive learning is a promising paradigm as it utilizes self-supervision signals and has no requirements for human annotations. However, prior works fail to incorporate fundamental domain knowledge into graph semantics and thus ignore the correlations between atoms that have common attributes but are not directly connected by bonds. To address these issues, we construct a Chemical Element Knowledge Graph (KG) to summarize microscopic associations between elements and propose a novel Knowledge-enhanced Contrastive Learning (KCL) framework for molecular representation learning. KCL framework consists of three modules. The first module, knowledge-guided graph augmentation, augments the original molecular graph based on the Chemical Element KG. The second module, knowledge-aware graph representation, extracts molecular representations with a common graph encoder for the original molecular graph and a Knowledge-aware Message Passing Neural Network (KMPNN) to encode complex information in the augmented molecular graph. The final module is a contrastive objective, where we maximize agreement between these two views of molecular graphs.
-
 # Model
+We construct a Chemical Element Knowledge Graph (KG) to summarize microscopic associations between elements and propose a novel Knowledge-enhanced Contrastive Learning (KCL) framework for molecular representation learning. KCL framework consists of three modules. **The first module**, knowledge-guided graph augmentation, augments the original molecular graph based on the Chemical Element KG. **The second module**, knowledge-aware graph representation, extracts molecular representations with a common graph encoder for the original molecular graph and a Knowledge-aware Message Passing Neural Network (KMPNN) to encode complex information in the augmented molecular graph. **The final module** is a contrastive objective, where we maximize agreement between these two views of molecular graphs.
+
 <div align=center><img src="./fig/overview.png" style="zoom:100%;" />
 </div>
 
-# Experiments
 
-## Requirements
+# Requirements
+To run our code, please install dependency packages.
 ```
 python         3.7
 torch          1.7.1
@@ -43,7 +42,9 @@ pandas         1.3.1
 lmdb           1.2.1
 ```
 
-## Preparing
+# Preparing
+We collect 250K unlabeled molecules sampled from the ZINC 15 datasets to pre-train KCL. The raw pre-training data can be found in `data/raw/zinc15_250K_2D.csv`.
+
 We saved pre-train dataset in LMDB, please execute `cd data` and run:
 
 - `python graph_utils.py`
@@ -61,7 +62,7 @@ To pre-train KCL, please execute `cd code` and run:
 - `bash script/pretrain.sh` -->
 
 
-## Running
+# Running
 
 To test on downstream tasks, please execute `cd code` and run:
 
@@ -92,7 +93,7 @@ CUDA_VISIBLE_DEVICES=0 python finetune.py \
 ```
 
 
-## Pre-trained Models
+# Pre-trained Models
 
 You can download pretrained models here: `/dump/Pretrain/gnn-kmpnn-model`
 
