@@ -21,7 +21,7 @@ Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming 
 We construct a Chemical Element Knowledge Graph (KG) to summarize microscopic associations between elements and propose a novel **K**nowledge-enhanced **C**ontrastive **L**earning (**KCL**) framework for molecular representation learning. 
 
 
-# Model
+## Model
 We construct a Chemical Element Knowledge Graph (KG) to summarize microscopic associations between elements and propose a novel Knowledge-enhanced Contrastive Learning (KCL) framework for molecular representation learning. KCL framework consists of three modules. **The first module**, knowledge-guided graph augmentation, augments the original molecular graph based on the Chemical Element KG. **The second module**, knowledge-aware graph representation, extracts molecular representations with a common graph encoder for the original molecular graph and a Knowledge-aware Message Passing Neural Network (KMPNN) to encode complex information in the augmented molecular graph. **The final module** is a contrastive objective, where we maximize agreement between these two views of molecular graphs.
 
 <div align=center><img src="./fig/overview.png" style="zoom:100%;" />
