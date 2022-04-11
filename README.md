@@ -47,15 +47,16 @@ We collect 250K unlabeled molecules sampled from the ZINC 15 datasets to pre-tra
 
 To save data loading time, we saved the molecular graphs and augmented molecular graphs of the pre-training dataset in LMDB before training. Please execute `cd data` and run:
 - `python graph_utils.py`
-Then you can find the processed LMDB file in `zinc15_250K_2D`.
+Then you can find the processed LMDB file in `zinc15_250K_2D`. You can also find it outputs a `zinc15_250K_2D.pkl`, which determines the order in which the pre-training molecules are read.
 
 
-
-We also apply hard negative strategy. Since the pre-training dataset contains 250K molecules, calculating the similarity between pairs of this dataset will result in insufficient server memory. The strategy we make here is to split the original dataset into multiple subsets, and calculate the similarity between pairs of molecules contained in each subset and cluster them. The clustering results of each subset are stitched together to ensure that the molecules in each batch are similar. To apply hard negative strategy, please execute `cd data` and run:
+We also apply hard negative sampling strategy. Since the pre-training dataset contains 250K molecules, calculating the similarity between pairs of this dataset will result in insufficient server memory. The strategy we make here is to split the original dataset into multiple subsets, and calculate the similarity between pairs of molecules contained in each subset and cluster them. The clustering results of each subset are stitched together to ensure that the molecules in each batch are similar. To apply hard negative sampling strategy, please execute `cd data` and run:
 - `bash dist.sh`
 - `bash cluster.sh`
 - `python uni_cluster.py`
 The output is stored in `cluster_0.85.pkl`. This filename corresponds to the `data_name` in `pretrain.py`, which determines the order in which the pre-training molecules are read.
+
+If you don't want this hard negative sampling strategy, just replace the `data_name` in `pretrain.py` with `zinc15_250K_2D`. This operation will replace `cluster_0.85.pkl` to  `zinc15_250K_2D.pkl`, which we obtained in the previous step.
 
 
 <!-- 
