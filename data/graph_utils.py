@@ -75,6 +75,7 @@ def smiles_2_kgdgl(smiles):
     begin_indexes = []
     end_indexes = []
     bonds_feature = []
+    edge_type = []
     
     for bond in mol.GetBonds():
         bond_feature = bondtype_features(bond)
@@ -86,20 +87,24 @@ def smiles_2_kgdgl(smiles):
         begin_indexes.append(connected_atom_map[bond.GetEndAtomIdx()])
         end_indexes.append(connected_atom_map[bond.GetBeginAtomIdx()])
         bonds_feature.append(bond_feature)
+    edge_type.extend([0]*len(bonds_feature))
 
     # add ids and features of tail entities and relations
     if begin_atoms:
-        begin_indexes.extend(begin_atoms)
-        end_indexes.extend(nodeids)
+        begin_indexes.extend(nodeids) # change head and tail entities
+        end_indexes.extend(begin_atoms)
         atoms_feature.extend(nodes_feature)
         bonds_feature.extend(rel_features)
+        edge_type.extend([1]*len(rel_features))
 
     
     # create dglgraph
     graph = dgl.graph((begin_indexes, end_indexes), idtype=torch.int32)
     graph.edata['e'] = torch.tensor(bonds_feature, dtype=torch.long)
     graph.ndata['h'] = torch.tensor(atoms_feature, dtype=torch.long) 
+    graph.edata['etype'] = torch.tensor(edge_type, dtype=torch.long) # 0 for bonds & 1 for rels
     return graph
+
 
 def smiles_2_dgl(smiles):
     mol = Chem.MolFromSmiles(smiles)
@@ -180,8 +185,4 @@ if __name__ == '__main__':
     with open('zinc15_250K_2D.pkl', 'wb') as f:
         pickle.dump(i, f)
 
-        
-    # graph1 = smiles_2_kgdgl('C(C1CCCCC1)NN')
-    # graph2 = smiles_2_dgl('C(C1CCCCC1)NN')
-    # print(graph.edges())
-    # print(graph.nodes())
+
