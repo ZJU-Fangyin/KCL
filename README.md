@@ -2,7 +2,7 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/Fangyin1994/KCL/blob/main/LICENSE)
 [![arxiv badge](https://img.shields.io/badge/arxiv-2112.00544-orange)](https://arxiv.org/abs/2112.00544)
 
-[**中文**](https://github.com/ZJU-Fangyin/KCL/blob/main/README_CN.md) | [**English**](https://github.com/ZJU-Fangyin/KCL)     
+<!-- [**中文**](https://github.com/ZJU-Fangyin/KCL/blob/main/README_CN.md) | [**English**](https://github.com/ZJU-Fangyin/KCL)      -->
 
 <p align="center">
     <a href="https://github.com/zjunlp/openue"> <img src="https://raw.githubusercontent.com/zjunlp/openue/master/docs/images/logo_zju_klab.png" width="400"/></a>
@@ -58,6 +58,7 @@ We also apply hard negative sampling strategy. Since the pre-training dataset co
 - `bash dist.sh`
 - `bash cluster.sh`
 - `python uni_cluster.py`
+
 The output is stored in `cluster_0.85.pkl`. This filename corresponds to the `data_name` in `pretrain.py`, which determines the order in which the pre-training molecules are read.
 
 If you don't want this hard negative sampling strategy, just replace the `data_name` in `pretrain.py` with `zinc15_250K_2D`. This operation will replace `cluster_0.85.pkl` to  `zinc15_250K_2D.pkl`, which we obtained in the previous step.
