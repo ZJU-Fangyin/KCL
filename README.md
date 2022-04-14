@@ -47,6 +47,7 @@ We collect 250K unlabeled molecules sampled from the ZINC 15 datasets to pre-tra
 
 To save data loading time, we saved the molecular graphs and augmented molecular graphs of the pre-training dataset in LMDB before training. Please execute `cd data` and run:
 - `python graph_utils.py`
+- 
 Then you can find the processed LMDB file in `zinc15_250K_2D`. 
 
 (If you want direct access to the processed pre-training data, please download [zinc15_250K_2D](https://drive.google.com/drive/folders/1upVs800OQXLVAUmJRT1adxelrmmPw_y1?usp=sharing) and put it under `data`.)
@@ -71,14 +72,12 @@ We provided pretrained models, which you can download from `code/dump/Pretrain/g
 <!-- # Pre-training
 
 If you want to pretrain the model by yourself, please execute `cd code` and run:
-
 - `bash script/pretrain.sh` -->
 
 
 # Running
 
 Then you can test on downstream tasks, please execute `cd code` and run:
-
 - `bash script/finetune.sh`
 
 Change the `data_name` command in the bash file to replace different datasets. The optional datasets are `BBBP, Tox21, ToxCast, SIDER, ClinTox, BACE, ESOL, FreeSolv`.
