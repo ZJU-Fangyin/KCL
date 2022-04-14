@@ -53,7 +53,6 @@ Then you can find the processed LMDB file in `zinc15_250K_2D`.
 
 You can also find another output `zinc15_250K_2D.pkl`, which determines the order in which the pre-training molecules are read.
 
-
 We also apply hard negative sampling strategy. Since the pre-training dataset contains 250K molecules, calculating the similarity between pairs of this dataset will result in insufficient server memory. The strategy we make here is to split the original dataset into multiple subsets, and calculate the similarity between pairs of molecules contained in each subset and cluster them. The clustering results of each subset are stitched together to ensure that the molecules in each batch are similar. To apply hard negative sampling strategy, please execute `cd data` and run:
 - `bash dist.sh`
 - `bash cluster.sh`
@@ -61,19 +60,20 @@ We also apply hard negative sampling strategy. Since the pre-training dataset co
 
 The output is stored in `cluster_0.85.pkl`. This filename corresponds to the `data_name` in `pretrain.py`, which determines the order in which the pre-training molecules are read.
 
-If you don't want this hard negative sampling strategy, just replace the `data_name` in `pretrain.py` with `zinc15_250K_2D`. This operation will replace `cluster_0.85.pkl` to  `zinc15_250K_2D.pkl`, which we obtained in the previous step.
-
-
-<!-- 
-# Training
-To pre-train KCL, please execute `cd code` and run:
-
-- `bash script/pretrain.sh` -->
+If you don't want this hard negative sampling strategy, just replace the `data_name` in `pretrain.py` with `zinc15_250K_2D`. This operation will replace `cluster_0.85.pkl` to  `zinc15_250K_2D.pkl`, which we obtained in the previous step. Remember to enter `code/data/pretrain.py` and modify `shuffle=True` to disrupt the order of reading the molecules.
 
 
 # Pre-trained Models
 
 We provided pretrained models, which you can download from `code/dump/Pretrain/gnn-kmpnn-model`.
+
+
+<!-- # Pre-training
+
+If you want to pretrain the model by yourself, please execute `cd code` and run:
+
+- `bash script/pretrain.sh` -->
+
 
 # Running
 
@@ -81,7 +81,7 @@ Then you can test on downstream tasks, please execute `cd code` and run:
 
 - `bash script/finetune.sh`
 
-Change the `data_name` command in the bash file to replace different datasets. The optional datasets are BBBP, Tox21, ToxCast, SIDER, ClinTox, BACE, ESOL, FreeSolv.
+Change the `data_name` command in the bash file to replace different datasets. The optional datasets are `BBBP, Tox21, ToxCast, SIDER, ClinTox, BACE, ESOL, FreeSolv`.
 
 You can also specify the `encoder_name`, `training rate`, etc. in this bash file. 
 
