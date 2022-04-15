@@ -4,9 +4,10 @@
 
 <!-- [**中文**](https://github.com/ZJU-Fangyin/KCL/blob/main/README_CN.md) | [**English**](https://github.com/ZJU-Fangyin/KCL)      -->
 
+<!-- 
 <p align="center">
     <a href="https://github.com/zjunlp/openue"> <img src="https://raw.githubusercontent.com/zjunlp/openue/master/docs/images/logo_zju_klab.png" width="400"/></a>
-</p>
+</p> -->
 
 # Molecular Contrastive Learning with Chemical Element Knowledge Graph
 
@@ -140,5 +141,6 @@ If you use or extend our work, please cite the following paper:
 }
 ```
 
+<!-- 
 # Other Matters
-As we plan to expand the paper to a journal, we will publish the training procedure together with the follow-up work in June to protect our work. Thanks for your understanding!
+As we plan to expand the paper to a journal, we will publish the training procedure together with the follow-up work in June to protect our work. Thanks for your understanding! -->
