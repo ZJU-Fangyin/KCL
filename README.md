@@ -62,6 +62,7 @@ We also apply hard negative sampling strategy. Since the pre-training dataset co
 - `bash cluster.sh`
 - `python uni_cluster.py`
 
+
 The output is stored in `cluster_0.85.pkl`. This filename corresponds to the `data_name` in `pretrain.py`, which determines the order in which the pre-training molecules are read.
 
 If you don't want this hard negative sampling strategy, just replace the `data_name` in `pretrain.py` with `zinc15_250K_2D`. This operation will replace `cluster_0.85.pkl` to  `zinc15_250K_2D.pkl`, which we obtained in the previous step. Remember to enter `code/data/pretrain.py` and modify `shuffle=True` to disrupt the order of reading the molecules.
