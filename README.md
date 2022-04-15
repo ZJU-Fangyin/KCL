@@ -43,6 +43,8 @@ lmdb           1.2.1
 ```
 
 # Preparing
+
+### Pre-training data
 We collect 250K unlabeled molecules sampled from the ZINC 15 datasets to pre-train KCL. The raw pre-training data can be found in `data/raw/zinc15_250K_2D.csv`.
 
 To save data loading time, we saved the molecular graphs and augmented molecular graphs of the pre-training dataset in LMDB before training. Please execute `cd data` and run:
@@ -50,10 +52,11 @@ To save data loading time, we saved the molecular graphs and augmented molecular
 
 Then you can find the processed LMDB file in `zinc15_250K_2D`. 
 
-(If you want direct access to the processed pre-training data, please download [zinc15_250K_2D](https://drive.google.com/drive/folders/1upVs800OQXLVAUmJRT1adxelrmmPw_y1?usp=sharing) and put it under `data`.)
+(If you want direct access to the processed pre-training data, please download [zinc15_250K_2D](https://drive.google.com/drive/folders/1upVs800OQXLVAUmJRT1adxelrmmPw_y1?usp=sharing)(8.58GB) and put it under `data`.)
 
 You can also find another output `zinc15_250K_2D.pkl`, which determines the order in which the pre-training molecules are read.
 
+### Hard negative sampling strategy
 We also apply hard negative sampling strategy. Since the pre-training dataset contains 250K molecules, calculating the similarity between pairs of this dataset will result in insufficient server memory. The strategy we make here is to split the original dataset into multiple subsets, and calculate the similarity between pairs of molecules contained in each subset and cluster them. The clustering results of each subset are stitched together to ensure that the molecules in each batch are similar. To apply hard negative sampling strategy, please execute `cd data` and run:
 - `bash dist.sh`
 - `bash cluster.sh`
@@ -62,6 +65,11 @@ We also apply hard negative sampling strategy. Since the pre-training dataset co
 The output is stored in `cluster_0.85.pkl`. This filename corresponds to the `data_name` in `pretrain.py`, which determines the order in which the pre-training molecules are read.
 
 If you don't want this hard negative sampling strategy, just replace the `data_name` in `pretrain.py` with `zinc15_250K_2D`. This operation will replace `cluster_0.85.pkl` to  `zinc15_250K_2D.pkl`, which we obtained in the previous step. Remember to enter `code/data/pretrain.py` and modify `shuffle=True` to disrupt the order of reading the molecules.
+
+### Knowledge feature initialization
+We adopt RotateE to train Chemical Element KG (`code/triples.txt`), the resulting embedding file is stored in `code/initial/RotatE_128_64_emb.pkl`.
+
+If you want to train the KG by yourself, please execute `cd code/initial` and run `python load.py`.
 
 
 # Pre-trained Models
