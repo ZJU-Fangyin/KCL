@@ -13,9 +13,9 @@
 
 This repository is the official implementation of [**KCL**](https://github.com/ZJU-Fangyin/KCL), which is model proposed in a paper: **[Molecular Contrastive Learning with Chemical Element Knowledge Graph](https://arxiv.org/abs/2112.00544)**, accepted by **AAAI 2022** main conference. 
 
-
+<!-- 
 # Contributor
-Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming Qin, Zhuo Chen, Xiaohui Fan, Huajun Chen
+Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming Qin, Zhuo Chen, Xiaohui Fan, Huajun Chen -->
 
 
 # Brief Introduction
