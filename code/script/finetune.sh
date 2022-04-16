@@ -1,5 +1,5 @@
 CUDA_VISIBLE_DEVICES=1 python finetune.py \
-    --seed 14 \
+    --seed 2 \
     --encoder_name KMPNN \
     --batch_size 64 \
     --predictor_hidden_feats 32 \
