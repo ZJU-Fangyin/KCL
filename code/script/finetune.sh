@@ -3,14 +3,14 @@ CUDA_VISIBLE_DEVICES=1 python finetune.py \
     --encoder_name KMPNN \
     --batch_size 64 \
     --predictor_hidden_feats 32 \
-    --patience 50 \
-    --encoder_path ./dump/Pretrain/gnn-kmpnn-model/KMPNNGNN_0910_0900_2000th_epoch.pkl \
-    --readout_path ./dump/Pretrain/gnn-kmpnn-model/Set2Set_0910_0900_2000th_epoch.pkl \
-    --lr 0.01 \
+    --patience 30 \
+    --encoder_path ./dump/Pretrain/gnn-kmpnn-model/KMPNNGNN_0910_2302_78000th_epoch.pkl \
+    --readout_path ./dump/Pretrain/gnn-kmpnn-model/Set2Set_0910_2302_78000th_epoch.pkl \
+    --lr 0.001 \
     --predictor nonlinear \
     --eval nonfreeze \
-    --data_name BACE \
+    --data_name BBBP \
     --split_type random \
     --dump_path ./dump \
     --exp_name KG-finetune-kmpnn \
-    --exp_id bace
+    --exp_id bbbp
