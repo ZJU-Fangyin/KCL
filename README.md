@@ -77,7 +77,9 @@ If you want to train the KG by yourself, please execute `cd code/initial` and ru
 
 # Pre-trained Models
 
-We provided pretrained models, which you can download from `code/dump/Pretrain/gnn-kmpnn-model`.
+We provided pretrained models, which you can download from `code/dump/Pretrain/gnn-kmpnn-model`. 
+
+Here we save 39 sets of KMPNN, GNN, Set2Set and WeightedSumAndMax models during training.
 
 
 <!-- # Pre-training
@@ -93,7 +95,7 @@ Then you can test on downstream tasks, please execute `cd code` and run:
 
 Change the `data_name` command in the bash file to replace different datasets. The optional datasets are `BBBP, Tox21, ToxCast, SIDER, ClinTox, BACE, ESOL, FreeSolv`.
 
-You can also specify the `encoder_name`, `training rate`, etc. in this bash file. 
+You can also specify the `encoder_name`, `training rate`, `encoder path`, `readout_path`, etc. in this bash file. 
 
 Note that if you change the `encoder_name`, don't forget to change the `encoder_path` and `readout_path`! 
 E.g:
