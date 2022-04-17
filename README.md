@@ -93,7 +93,8 @@ If you want to pretrain the model by yourself, please execute `cd code` and run:
 Then you can test on downstream tasks, please execute `cd code` and run:
 - `bash script/finetune.sh`
 
-Change the `data_name` command in the bash file to replace different datasets. The optional datasets are `BBBP, Tox21, ToxCast, SIDER, ClinTox, BACE, ESOL, FreeSolv`.
+Change the `data_name` command in the bash file to replace different datasets. 
+<!-- The optional datasets are `BBBP, Tox21, ToxCast, SIDER, ClinTox, BACE, ESOL, FreeSolv`. -->
 
 You can also specify the `encoder_name`, `training rate`, `encoder path`, `readout_path`, etc. in this bash file. 
 
