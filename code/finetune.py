@@ -60,7 +60,7 @@ class Reproduce(object):
             self.optimizer = Adam([{"params": self.predictor.parameters()}, {"params": self.encoder.parameters()}, {"params": self.readout.parameters()}], lr=self.args['lr'])
        
     def run_train_epoch(self, dataloader):
-        self.encoder.train()
+        self.encoder.eval()
         self.predictor.train()
         total_loss = 0
         for batch_id, batch_data in enumerate(dataloader):
