@@ -115,7 +115,7 @@ CUDA_VISIBLE_DEVICES=0 python finetune.py \
     --dump_path ./dump \
     --exp_name KG-finetune-gnn \
     --exp_id tox21
-`
+```
 
 
 # Papers for the Project & How to Cite
