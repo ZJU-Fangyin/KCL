@@ -121,11 +121,11 @@ CUDA_VISIBLE_DEVICES=0 python finetune.py \
 # Papers for the Project & How to Cite
 If you use or extend our work, please cite the following paper:
 ```
-@article{fang2021molecular,
-  title={Molecular Contrastive Learning with Chemical Element Knowledge Graph},
-  author={Fang, Yin and Zhang, Qiang and Yang, Haihong and Zhuang, Xiang and Deng, Shumin and Zhang, Wen and Qin, Ming and Chen, Zhuo and Fan, Xiaohui and Chen, Huajun},
-  journal={arXiv preprint arXiv:2112.00544},
-  year={2021}
+@InProceedings{Fang2021Molecular,
+    author    = {Fang, Yin and Zhang, Qiang and Yang, Haihong and Zhuang, Xiang and Deng, Shumin and Zhang, Wen and Qin, Ming and Chen, Zhuo and Fan, Xiaohui and Chen, Huajun},
+    title     = {Molecular Contrastive Learning with Chemical Element Knowledge Graph},
+    booktitle = {Proceedings of the Thirty-Sixth AAAI Conference on Artificial Intelligence (AAAI)},
+    year      = {2022}
 }
 ```
 
