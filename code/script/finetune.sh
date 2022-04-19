@@ -10,7 +10,6 @@ CUDA_VISIBLE_DEVICES=1 python finetune.py \
     --predictor nonlinear \
     --eval nonfreeze \
     --data_name BBBP \
-    --split_type random \
     --dump_path ./dump \
     --exp_name KG-finetune-kmpnn \
     --exp_id bbbp
