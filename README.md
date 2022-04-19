@@ -94,7 +94,6 @@ Then you can test on downstream tasks, please execute `cd code` and run:
 - `bash script/finetune.sh`
 
 Change the `data_name` command in the bash file to replace different datasets. 
-<!-- The optional datasets are `BBBP, Tox21, ToxCast, SIDER, ClinTox, BACE, ESOL, FreeSolv`. -->
 
 You can also specify the `encoder_name`, `training rate`, `encoder path`, `readout_path`, etc. in this bash file. 
 
@@ -113,24 +112,10 @@ CUDA_VISIBLE_DEVICES=0 python finetune.py \
     --predictor nonlinear \
     --eval nonfreeze \
     --data_name Tox21 \
-    --split_type random \
     --dump_path ./dump \
     --exp_name KG-finetune-gnn \
     --exp_id tox21
-```
-
-<!-- ## Results
-We verify the effectiveness of KCL under two settings on 8 benchmark datasets from the MoleculeNet: (1) fine-tune protocol (2) linear protocol.
-
-* performance under fine-tune protocol
-<div align=center><img src="./fig/fine-tune_protocol.png" width = "800" />
-</div>
-
-<br/>
-
-* performance under linear protocol
-<div align=center><img src="./fig/linear_protocol.png" height = "250" />
-</div> -->
+`
 
 
 # Papers for the Project & How to Cite
