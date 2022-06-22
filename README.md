@@ -130,5 +130,4 @@ If you use or extend our work, please cite the following paper:
 ```
 
 
-# Other Matters
-As we plan to expand the paper to a journal, we will publish the training procedure together with the follow-up work in June to protect our work. Thanks for your understanding!
+
