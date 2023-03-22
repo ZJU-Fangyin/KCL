@@ -10,7 +10,6 @@ import dgl
 import torch
 import torch.nn as nn
 import pdb
-from load_triples import Triples
 from torch.nn import Embedding
 from pandarallel import pandarallel
 from rdkit import Chem, DataStructs
