@@ -19,8 +19,10 @@ Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming 
 
 # 🔔 News 
 
-- **2023-6 We release [Mol-Instructions](https://github.com/zjunlp/Mol-Instructions), a large-scale biomolecule instruction dataset for large language models.**
-- **2023-3 We propose [MolGen](https://github.com/zjunlp/MolGen), a robust pre-trained molecular generative model with self-feedback.**
+- **`2023-6` We release [Mol-Instructions](https://github.com/zjunlp/Mol-Instructions), a large-scale biomolecule instruction dataset for large language models.**
+- **`2023-6` We propose [Knowledge graph-enhanced molecular contrAstive learning with fuNctional prOmpt (KANO)](https://www.nature.com/articles/s42256-023-00654-0) on `Nature Machine Intelligence`, exploiting fundamental domain knowledge in both pre-training and fine-tuning.**
+- **`2023-3` We propose [MolGen](https://github.com/zjunlp/MolGen), a robust pre-trained molecular generative model with self-feedback.**
+
 
 # Brief Introduction
 We construct a Chemical Element Knowledge Graph (KG) to summarize microscopic associations between elements and propose a novel **K**nowledge-enhanced **C**ontrastive **L**earning (**KCL**) framework for molecular representation learning. 
