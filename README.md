@@ -19,6 +19,8 @@ Yin Fang, Qiang Zhang, Haihong Yang, Xiang Zhuang, Shumin Deng, Wen Zhang, Ming 
 
 # 🔔 News 
 
+- **`2024-1` Our paper [Domain-Agnostic Molecular Generation with Chemical Feedback](https://github.com/zjunlp/MolGen) is accepted by ICLR 2024.**
+- **`2024-1` Our paper [Mol-Instructions: A Large-Scale Biomolecular Instruction Dataset for Large Language Models](https://github.com/zjunlp/Mol-Instructions) is accepted by ICLR 2024.**
 - **`2023-6` We release [Mol-Instructions](https://github.com/zjunlp/Mol-Instructions), a large-scale biomolecule instruction dataset for large language models.**
 - **`2023-5` We propose [Knowledge graph-enhanced molecular contrAstive learning with fuNctional prOmpt (KANO)](https://github.com/HICAI-ZJU/KANO) on `Nature Machine Intelligence`, exploiting fundamental domain knowledge in both pre-training and fine-tuning.**
 - **`2023-3` We propose [MolGen](https://github.com/zjunlp/MolGen), a robust pre-trained molecular generative model with self-feedback.**
